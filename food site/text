@@ -1,0 +1,27 @@
+api =  a6b74665ea91407ca56d634c4d35e4b0
+ 
+4eb8222593c648b99409b8a846faaf5d
+
+e3db7cac2a46459184986d54258273bc
+ https://api.spoonacular.com/recipes/search?apiKey=a6b74665ea91407ca56d634c4d35e4b0&query=pasta&number=1
+
+
+ 
+
+https://api.spoonacular.com/recipes/716429/information?apiKey=a6b74665ea91407ca56d634c4d35e4b0&includeNutrition=false
+
+const searchForm = document.querySelector('#search-form');
+const searchInput = document.querySelector('#search-input');
+
+searchForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const searchValue = searchInput.value.trim();
+
+  if (searchValue === '') {
+    alert('Please enter a search term');
+    return;
+  }
+
+  id.fetchId(searchValue); // Call the fetchId function with the search value
+});
